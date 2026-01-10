@@ -1,40 +1,40 @@
 # Next-Generation RAG Framework
 
-A hands-on lab of modern **Retrieval-Augmented Generation (RAG)** techniques—built to compare strategies side-by-side on the same stack. Spin it up, pick a strategy, ask questions, and measure the difference.
+A modular and extensible **Retrieval-Augmented Generation (RAG) framework** developed to explore, compare, and execute advanced retrieval strategies for high-quality AI question answering.
 
-> Strategies included: **Simple RAG w/ Memory, Corrective RAG (CRAG), Adaptive RAG, Self-RAG, Fusion RAG, Speculative RAG, Agentic RAG, HyDE**.
+This project unifies multiple RAG paradigms under one architecture, enabling clear experimentation and practical evaluation of retrieval techniques with modern LLMs.
 
 ---
 
-## 🧭 Table of Contents
+## 🚀 Overview
 
-* [Features](#features)
-* [Architecture](#architecture)
-* [Quickstart](#quickstart)
-* [Data & Vector DB](#data--vector-db)
-* [Usage](#usage)
-* [Strategies](#strategies)
-* [Project Structure](#project-structure)
-* [Config & Environment](#config--environment)
-* [Troubleshooting](#troubleshooting)
-* [Contributing](#contributing)
-* [License](#license)
+This framework supports several retrieval strategies including:
+- **Baseline RAG with Memory**
+- **Corrective RAG (CRAG)**
+- **Adaptive RAG**
+- **Self-RAG**
+- **Fusion RAG**
+- **Speculative RAG**
+- **Agentic RAG**
+- **HyDE (Hypothetical Document Embeddings)**
+
+Each strategy is designed to demonstrate different approaches to improving relevance, accuracy, and reasoning quality in retrieval-based GenAI systems.
 
 ---
 
 ## ✨ Features
 
-* Pluggable **RAG strategies** behind a common interface.
-* **Chroma** vector store (synthetic dataset generator included).
-* One-command **local app**: choose a strategy, ask a question.
-* Clear separation of **data processing** vs **inference**.
-* Easy to extend with your own documents.
-
-**YouTube video:**: [Link](https://youtu.be/4_-SnxReJ4M?si=pRn7JNzOrq-lInby)
+- Clean, pluggable architecture for different RAG strategies
+- Command line interface to run any strategy interactively
+- Chroma vector database with synthetic data generation
+- Complete separation between data ingestion, retrieval, and answer generation
+- Easy to extend with custom datasets or new RAG techniques
 
 ---
 
-## 🏗️ Architecture
+## 🧠 Architecture
+
+
 
 ```
 User Query
