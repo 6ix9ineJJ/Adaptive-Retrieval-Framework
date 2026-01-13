@@ -1,4 +1,4 @@
-# Next-Generation RAG Framework
+# Adaptive Retrieval Framework
 
 A hands-on lab of modern **Retrieval-Augmented Generation (RAG)** techniques—built to compare strategies side-by-side on the same stack. Spin it up, pick a strategy, ask questions, and measure the difference.
 
@@ -18,7 +18,6 @@ A hands-on lab of modern **Retrieval-Augmented Generation (RAG)** techniques—b
 * [Config & Environment](#config--environment)
 * [Troubleshooting](#troubleshooting)
 * [Contributing](#contributing)
-* [License](#license)
 
 ---
 
@@ -29,8 +28,6 @@ A hands-on lab of modern **Retrieval-Augmented Generation (RAG)** techniques—b
 * One-command **local app**: choose a strategy, ask a question.
 * Clear separation of **data processing** vs **inference**.
 * Easy to extend with your own documents.
-
-**YouTube video:**: [Link](https://youtu.be/4_-SnxReJ4M?si=pRn7JNzOrq-lInby)
 
 ---
 
@@ -67,8 +64,8 @@ Answer (+ optional citations/notes)
 
 ```bash
 # Clone
-git clone 
-cd next-generation-rag-framework
+git clone https://github.com/6ix9ineJJ/Adaptive-Retrieval-Framework.git
+cd Adaptive-Retrieval-Framework
 
 # Create new environment with Python 3.11
 python3.11 -m venv venv
@@ -96,7 +93,7 @@ python src/data_ingestion.py
 
 ### 2) Use your own documents
 
-* Add your docs to the appropriate `data/` location (see project structure).
+* Add your docs to appropriate `data/` location (see project structure).
 * Build a Chroma vector DB from your docs.
   *(If you need a walkthrough, see my other RAG projects for doc ingestion → Chroma build steps.)*
 
@@ -113,7 +110,7 @@ python src/main_application.py
 
 * Select the desired **RAG strategy**.
 * Ask your question.
-* Review the model’s response (and optional notes/citations depending on strategy).
+* Review the model's response (and optional notes/citations depending on strategy).
 
 ---
 
@@ -135,7 +132,7 @@ python src/main_application.py
 ## 📁 Project Structure
 
 ```
-next-generation-rag-framework/
+Adaptive-Retrieval-Framework/
 ├─ src/
 │ ├─ rag_techniques/
 │ │ ├─ adaptive_rag.py
@@ -183,7 +180,7 @@ You can also place them in a local `.env` and load via your preferred method.
 
 ## 🛠️ Troubleshooting
 
-* **Module not found / imports:** Ensure you’re running from project root and the venv is active.
+* **Module not found / imports:** Ensure you're running from project root and venv is active.
 * **No results from retriever:** Build the vector DB first (`python src/data_processor.py`) or ingest your docs.
 * **API errors:** Verify your API key is exported and your account has access to the selected model.
 
@@ -202,4 +199,5 @@ Open an issue to discuss major changes before submitting a PR.
 ---
 
 **Have fun experimenting!**
+
 Pick a strategy, ask a question, and see how retrieval choices shape answers.
